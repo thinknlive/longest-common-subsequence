@@ -54,9 +54,9 @@ function findContiguousHistory (user0, user1) {
       let bitesize = j;
       let shortbits = shortslice.slice(0,j);
       let shortbite = shortbits.join('');
-      //console.log('shortbite: ' + JSON.stringify(shortslice.slice(0,j)));
+      //console.log('shortbite: ' + JSON.stringify(shortbits));
       if (long.indexOf(shortbite) >= 0) {
-        matches.push([bitesize, shortslice.slice(0,j)]);
+        matches.push([bitesize, shortbits]);
       }
     }
   }
